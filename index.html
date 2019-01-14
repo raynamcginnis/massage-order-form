@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Pacifico" rel="stylesheet">    <title>Example Massage Studio Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+     <div class="container">
+        <div class="jumbotron jumbotron-fluid center">
+    
+<img src="massagelogo.png" height="150px" alt="massage logo" id="logo">
+<hr>
+<form action="submission.html" method="POST">
+<!-- Name -->
+<p>Fill out the form below and we'll reach out to you within 24 business days to schedule your massage!</p>
+    <br>
+    <h3>About You:</h3>
+    <br>
+        <section class="name">
+            <label for="name">Your Name:</label>
+                <input type="text" name="name" id="name" required>
+        </section>
+<br>
+<!-- Phone Number -->
+        <section class="phone">
+            <label for="phone">Your Number:</label>
+                <input type="number" name="number" id="number" required>
+        </section>
+<br>
+<!-- Email Address -->
+        <section class="email">
+            <label for="email">Your Email Address:</label>
+                <input type="email" name="email" id="email" required>
+        </section>
+<hr>
+<h3>Customize Your Massage:</h3>
+<br>
+ <!-- length of session -->
+        <section class="length">
+            <span>Length of Session</span>
+            <br>
+                <input type="radio" name="length" id="1hr" value="1hr">
+                <label for="1hr">1 Hour</label>
+                <input type="radio" name="length" id="90mins" value="90mins">
+                <label for="90mins">90 Mins</label>
+                <input type="radio" name="length" id="2hr" value="2hr">
+                <label for="2hr">2 Hours</label>
+        </section>
+<br>
+ <!-- Preferred Pressure -->
+        <section class="pressure">
+            <!-- <label for="pressure">How Much Pressure Do You Prefer?</label> -->
+            <span>How Much Pressure Do You Prefer?<span>
+
+            <br>
+            <span>Light</span>
+            <input type="range" name="pressure" id="pressure" value="3" min="1" max="5">
+            <span>Deep</span>
+        </section>
+<br>
+ <!-- Session Add Ons -->
+        <section class="addons">
+            <span>Would You Like Any Add Ons?</span>
+            <br>
+            <input type="checkbox" name="addons" id="Hotstones" value="hotstones">
+            <label for="hotstones">Himilayan Hot Stones</label>
+            <input type="checkbox" name="addsons" id="aromatherapy" value="aromatherapy">
+            <label for="aromatherapy">Lavender Aromatheraphy</label>
+            <input type="checkbox" name="addons" id="none" value="none">
+            <label for="none">None</label>
+        </section>
+<br>
+ <!-- Preferred Therapist -->
+        <section class="therapist">
+            <span>Do You Have A Preferred Therapist?</span>
+            <select name="therapists" id="therapists">
+                <option value="smith">Jamie Smith</option>
+                <option value="doe">John Doe</option>
+                <option value="king">Emma King</option>
+                <option value="available">Anyone Available</option>
+            </select>
+            </section>
+        <br>
+<!-- Availability -->
+            <section class="availability">
+                <span>Preferred Days To Schedule:</span>
+                <br>
+                <input type="checkbox" name="availability" id="monday" value="monday">
+                <label for="monday">Monday</label>
+                <input type="checkbox" name="availability" id="tuesday" value="tuesday">
+                <label for="tuesday">Tuesday</label>
+                <input type="checkbox" name="availability" id="wednesday" value="wednesday">
+                <label for="wednesday">Wednesday</label>
+                <input type="checkbox" name="availability" id="thursday" value="thursday">
+                <label for="thursday">Thursday</label>
+                <input type="checkbox" name="availability" id="friday" value="friday">
+                <label for="friday">Friday</label>
+            </section>
+<hr>
+ <!-- Comment Form -->
+        <h3>Additional Information:</h3>  
+        <section class="extra">
+            <label for="extra">Comments, Questions or Concerns:</label>
+            <br>
+            <textarea id="extra" name="extra" rows="5" cols="35"></textarea>
+        </section>
+<br>
+ <!-- Submit Button -->
+        <section class="submit">
+            <form>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </form>
+    <br>
+</section>
+</div>
+</div>
+
+</body>
+  </html>
